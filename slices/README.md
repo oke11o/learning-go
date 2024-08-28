@@ -262,5 +262,5 @@ func (s *Stack) Pop() (int, error) {
 }
 ```
 
-- [get-slice-from-other-capacity.go](09-get-slice-from-other-capacity/README.md)
-- [change-in-range.go](./10-change-in-range/README.md)
+- [get-slice-from-other-capacity](09-get-slice-from-other-capacity/README.md)
+- [change-in-range](./10-change-in-range/README.md)
