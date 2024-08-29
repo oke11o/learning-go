@@ -13,3 +13,8 @@ https://habr.com/ru/companies/oleg-bunin/articles/676332/
 Относительно фреймов стека горутин можно в целом затронуть тему Bound Check Elimination. В статьях по BCE часто дается инфа по устройству стека:
 https://medium.com/a-journey-with-go/go-memory-safety-with-bounds-check-1397bef748b5
 https://medium.com/a-journey-with-go/go-how-does-the-goroutine-stack-size-evolve-447fc02085e5
+
+
+Как происходит захват и освобождение переменных в лямбдах - а вот про это накидайте материала?
+https://dr-knz.net/go-calling-convention-x86-64.html#toc-entry-17 - Здесь есть абзац про deferred closures с ASM кодом.
+https://habr.com/ru/companies/badoo/articles/468863/ - Про реализацию closures (внизу)
