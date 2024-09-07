@@ -1,21 +1,8 @@
 # Tasks
 
 
-## 0
 
-```go
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	array := []int{1, 2, 3, 4, 5, 6}
-	s := array[1:2:4]
-	fmt.Println(s, len(s), cap(s))
-}
-```
+- 0. [Take low/high/max](00-take-low-high-max/README.md)
 
 ## 1
 https://dev.to/crusty0gphr/tricky-golang-interview-questions-part-1-slice-header-3oo0
@@ -34,23 +21,24 @@ type slice struct {
 	cap   int
 }
 
-func main(){
-	nums := make([]int, 0, 2) 
+func main() {
+	nums := make([]int, 0, 2)
 	fmt.Println(nums, len(nums), cap(nums))
 
-	appendStice (nums,1024)
-	fmt.Println(nums,	len (nums), cap (nums)) 
+	appendSlice(nums, 1024)
+	fmt.Println(nums, len(nums), cap(nums))
 
-	mutateSlice(nums, 0,512)
-	fmt.Println(nums,	len (nums), cap (nums))
+	mutateSlice(nums, 0, 512)
+	fmt.Println(nums, len(nums), cap(nums))
 }
 
-func appendStice(sl []int, val int){
+func appendSlice(sl []int, val int) {
 	sl = append(sl, val)
+	fmt.Println(sl, len(sl), cap(sl))
 }
 
-func mutateSlice(sl []int, i, val int){
-	sl[i]=val
+func mutateSlice(sl []int, i, val int) {
+	sl[i] = val
 } 
 ```
 
